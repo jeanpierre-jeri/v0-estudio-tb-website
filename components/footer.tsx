@@ -1,8 +1,8 @@
-import Link from "next/link"
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import Link from "next/link";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="w-full bg-navy-blue text-white">
@@ -12,7 +12,8 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 font-serif text-2xl font-bold">Estudio TB</h3>
             <p className="text-sm text-gray-300">
-              Asesoramiento legal integral con profesionales especializados en diversas áreas del derecho.
+              Asesoramiento legal integral con profesionales especializados en
+              diversas áreas del derecho.
             </p>
           </div>
 
@@ -21,22 +22,25 @@ export default function Footer() {
             <h4 className="mb-4 text-lg font-semibold">Enlaces rápidos</h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link href="#" className="hover:text-white hover:underline">
+                <Link href="/" className="hover:text-white hover:underline">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white hover:underline">
+                <Link href="/" className="hover:text-white hover:underline">
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white hover:underline">
+                <Link href="/" className="hover:text-white hover:underline">
                   Sobre nosotros
                 </Link>
               </li>
               <li>
-                <Link href="#contacto" className="hover:text-white hover:underline">
+                <Link
+                  href="/#contacto"
+                  className="hover:text-white hover:underline"
+                >
                   Contacto
                 </Link>
               </li>
@@ -47,19 +51,31 @@ export default function Footer() {
           <div>
             <h4 className="mb-4 text-lg font-semibold">Síguenos</h4>
             <div className="flex space-x-4">
-              <Link href="#" className="rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20">
+              <Link
+                href="#"
+                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20"
+              >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20">
+              <Link
+                href="#"
+                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20"
+              >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20">
+              <Link
+                href="#"
+                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20"
+              >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20">
+              <Link
+                href="#"
+                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20"
+              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -84,5 +100,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
